@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidHiltExample</string>
+    <string name="label">Note Title Here</string>
+    <string name="details">Note Details Here</string>
 </resources>

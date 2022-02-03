@@ -1,10 +1,12 @@
 package com.example.androidhiltexample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -29,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         rcv_notes = findViewById(R.id.rcv_notes)
         rcv_notes.layoutManager = LinearLayoutManager(this)
         rcv_notes.adapter = adapter
+
+        findViewById<FloatingActionButton>(R.id.fab_add).setOnClickListener{
+            startActivity(Intent(this, AddEditNoteActivity::class.java))
+        }
 
     }
 }
