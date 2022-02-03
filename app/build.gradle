@@ -46,4 +46,10 @@ dependencies {
 //  ANDROID HILT
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+//    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_version"
+//    kapt "androidx.hilt:hilt-compiler:$hilt_version"
+//
+//    // Activity KTX for viewModels()
+//    implementation "androidx.activity:activity-ktx:1.4.0"
 }
